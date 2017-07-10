@@ -17,6 +17,10 @@ import { EntityLineComponent, CreateEntityComponent, FormLineComponent,
 
 import { AppComponent } from './app.component';
 
+import {DiogoCreateEntityComponent} from './componentes/diogo.createform';
+import {DiogoFormLineComponent} from './componentes/diogo.formline';
+
+
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: ':entitytypename', component: ListEntitiesComponent },
@@ -29,7 +33,9 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DiogoCreateEntityComponent,
+    DiogoFormLineComponent
   ],
   imports: [
     CommonModule,
@@ -54,7 +60,9 @@ const appRoutes: Routes = [
     EditFormLineComponent,
     EntityDetailsComponent, 
     ShowLineComponent,
-    ListingTableComponent
+    ListingTableComponent,
+    DiogoCreateEntityComponent,
+    DiogoFormLineComponent
   ],
   bootstrap: [AppComponent]
 })
