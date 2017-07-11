@@ -5,6 +5,6 @@ import { PropertyTypeComponent } from 'angularm';
 @Component({
     selector: 'th [mgTableHeader]',
     template:
-        `<div>{{propertyType.name | titleCase}}</div>`,
+        `<div [ngClass]="configuration.headerClass">{{propertyType.name | titleCase}}</div>`,
 })
 export class TableHeaderComponent extends PropertyTypeComponent { }
